@@ -1,0 +1,20 @@
+
+
+
+
+
+
+@media (max-width:500px) {
+    .nav_left {
+        display: none;
+    }
+    .nav_right {
+        font-size: clamp(8,3vw,16px);
+    }
+    .img_burger {
+        display: block;
+    }
+    .nav-menu {
+        margin: 0 auto;
+    } 
+}

@@ -1,0 +1,108 @@
+/* ===== WRAPPER ===== */
+.wrapper {
+    max-width: 2000px;
+    /* Максимальная ширина */
+    margin: 0 auto;
+    /* Центрирование по горизонтали */
+    padding: clamp(30px, 4vw, 47px) clamp(16px, 10vw, 140px);
+    /* Отступы по бокам (для мобилок) */
+    width: 100%;
+    /* На маленьких экранах — 100% */
+}
+
+/* Шапка */
+
+.header_nav {
+    z-index: 99;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    font-family: var(--GoogleSans);
+    font-weight: 500;
+    font-size: 1.0625rem;
+    flex-shrink: 0
+}
+.nav_left {
+    display: flex;
+    gap: clamp(16px, 3vw, 55px);
+    align-items: center;
+}
+.nav_text{
+    display: inline-block;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+.nav_text:hover {
+    transform: translateY(-4px); 
+    color: rgb(99, 99, 128);
+}
+.nav_right {
+    display: flex;
+    gap: clamp(16px, 3vw, 55px);
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    position: relative;
+    gap: clamp(20px, 3vw, 55px);
+    margin-left:  auto;
+    align-items: center;
+    font-size: clamp(8px, 1.5vw, 17px);
+    flex-shrink: 0
+}
+.btn-signup {
+    display: inline-block;
+    border: clamp(1px, 0.15vw, 2px) solid black;
+    padding: 0.4vw 1vw;
+    border-radius: clamp(2px,0.5vw,5px);
+    transition: background 0.3s ease;
+}
+.btn-signup:hover {
+    background-color: #000000;
+    color: bisque;
+
+}
+.btn-lang {
+    color:#000000;
+}
+/* облако */
+.header__claude {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(220px, 40vw, 704px);
+    z-index: 0;
+}
+/* свечение слева в шапке */
+.header__ellipse-light {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* логотип */
+.logo_link {
+    width: clamp(70px, 8vw, 115px);
+    height: auto;
+    /* Резиновая высота */
+    /* Ширина подстраивается под высоту */
+    display: block;
+    object-fit: contain;
+}
+
+/* бургер меню */
+.img_burger,
+.nav_burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+.img_burger {
+    width: clamp(30px,10vw,55px);
+}
+.br {
+    width: 100%;
+    height: 5000px;
+}

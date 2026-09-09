@@ -1,0 +1,69 @@
+{
+    // ============================================
+    // 1. Авто-исправление ESLint при сохранении
+    // ============================================
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    // ============================================
+    // 2. Какие файлы проверять ESLint
+    // ============================================
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    // ============================================
+    // 3. Использовать Flat Config (ESLint v9+)
+    // ============================================
+    "eslint.useFlatConfig": true,
+    // ============================================
+    // 4. Если используете pnpm
+    // ============================================
+    "eslint.packageManager": "pnpm",
+    // ============================================
+    // 5. Авто-форматирование всего файла при сохранении
+    // ============================================
+    "editor.formatOnSave": true,
+    // ============================================
+    // 6. Использовать ESLint как форматтер по умолчанию
+    // ============================================
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    // ============================================
+    // 7. Дополнительные настройки ESLint
+    // ============================================
+    "eslint.run": "onType", // Проверять при наборе текста
+    "eslint.alwaysShowStatus": true, // Показывать статус внизу
+    "eslint.format.enable": true, // Разрешить форматирование через ESLint
+    // ============================================
+    // 8. Настройки для конкретных языков
+    // ============================================
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
+}
