@@ -5,6 +5,7 @@
 
 
 @media (max-width:500px) {
+    /* шапка */
     .nav_left {
         display: none;
     }
@@ -17,4 +18,22 @@
     .nav-menu {
         margin: 0 auto;
     } 
+    /* секция1 */
+
+    .section1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .section1_img-girl {
+        margin-left: 0;
+    }
+    .Desc {
+        width: 100%;
+        max-width: 100%;
+    }
+    .girl-wrapper {
+        width: 100%;
+        max-width: 400px;
+    }
 }
