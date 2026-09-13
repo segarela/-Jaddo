@@ -163,6 +163,7 @@
     right: -8%;
     transform: rotate(20deg);
 }
+/* Текст секции 1 */
 .Desc {
     display: flex;
     flex-direction: column;
@@ -178,6 +179,7 @@
     color: #DF6951;
     text-transform: uppercase;
 }
+/* Заголовок */
 .Desc2 {
     font-family: var(--Volkhov);
     font-weight: bold;
@@ -189,4 +191,81 @@
     font-size: clamp(12px,3vw,16px);
     font-weight: 500;
     color: #5E6282;
+}
+/* секция 2 */
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: clamp(30px,8vw,100px);
+    max-width: 1920px;
+    height: auto;
+    border: var(--border);
+    margin-top: clamp(30px,3.5vw,97px);
+    position: relative;
+}
+.section2_services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+}
+.section2_services > img {
+    width: 92px;
+    object-fit: contain;
+    height: auto;
+}
+.services_blocks > p {
+    width: 60%;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: clamp(12px,2vw,16px);
+    color: #5E6282;
+}
+.services_blocks > img {
+    width: clamp(60px,5vw,90px);
+    height: auto;
+    object-fit: contain;
+}
+.section2_span {
+    font-family: var(--opensans);
+    font-size: clamp(14px,1.5vw,20px);
+    font-weight: 600;
+    color: #000000;
+    display: inline-block; /* ← Делает span блочным */
+    margin-bottom: clamp(8px, 1.5vw, 16px);
+
+}
+.section2_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto; 
+}
+.section2_img {
+    position: absolute;
+    right: 0;
+}
+.section2_header-p1 {
+    font-family: var(--poppins);
+    font-size: clamp(12px,2.5vw,18px);
+    font-weight: 600;
+    color: #5E6282;
+}
+.section2_header-p2 {
+    font-family: var(--Volkhov);
+    font-size: clamp(20px, 4vw, 50px);
+    font-weight: bold;
+    color: #14183E;
+}
+.section2_img-group4 {
+    width: clamp(60px,11vw,150px);
+}
+
+.services_blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

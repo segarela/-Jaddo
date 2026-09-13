@@ -2,22 +2,30 @@
 
 
 
+@media (max-width:900px) {
+    .services_blocks > p {
+        width: 90%;
+    }
+}
 
-
-@media (max-width:500px) {
+@media (max-width:750px) {
     /* шапка */
     .nav_left {
         display: none;
     }
     .nav_right {
-        font-size: clamp(8,3vw,16px);
+        font-size: 12px;
     }
     .img_burger {
         display: block;
     }
     .nav-menu {
         margin: 0 auto;
+    }
+    .btn-lang {
+        display: none;
     } 
+
     /* секция1 */
 
     .section1 {
@@ -36,4 +44,15 @@
         width: 100%;
         max-width: 400px;
     }
+    .section2_services {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    .services_blocks > p {
+        width: 70%;
+    }
 }
+
+
+
